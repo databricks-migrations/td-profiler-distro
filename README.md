@@ -4,7 +4,7 @@
 
 1. Databricks Workspace to execute Profiler notebooks.
 2. Network connectivity to Teradata Instance from Databricks Workspace.
-3. PDCR (Performance Data Collection and Reporting) usage.
+3. Teradata PDCR (Performance Data Collection and Reporting) enabled and has data for a minimum of 90 days.
 3. Teradata JDBC Driver
 4. Teradata User id with SELECT grant on following tables/views
     
@@ -52,14 +52,14 @@
 * You will get the following notebooks in **td-profiler** workspace folder after import.
 ![td-profiler folder](documentation/assets/td-profiler-nootebook-folder.png)
 <br>
-* Run the Notebooks in the following sequence.
+* Use the Notebooks in the following sequence.
 <br>
 
   **1 td_profiler_usage_data_extract_queries** :
-  * No need to run this notebook directly. 
-  * This notebook includes the SQL queries for usage data extract and it is used  by  `td_profiler_usage_data_extract` notebook.
-  * You can review these queries used by profiler for usage data extract.
-  * If required you can also adjust the duration in number of days for the various data extract queries to control the volume of the data.
+  * No need to run this notebook. 
+  * This notebook includes the SQL queries to extract Teradata usage data and these queries are used by `td_profiler_usage_data_extract` notebook.
+  * You can review these queries.
+  * If required you can also adjust the duration in number of days for the various queries to control the volume of the data.
         <img src="documentation/assets/PDCR_query_hist_SQL_sample.png" alt="Sample Usage Data Extract Query" width="400"/>
 <br>
 
@@ -73,10 +73,10 @@
       dbutils.widgets.text("dbpwd", "<SetThis>")
       dbutils.widgets.text("targetSchema", "migrations_td_profiler")
     ```
-  * Enter Notebook Input Parameters values
+  * Enter input values for Notebook parameter
     <img src="documentation/assets/data_extract_notebook_widgets.png" alt="Usage Data Extract Notebook Widgets" width="800"/>
   * :information_source: `dbpwd` notebook widget will be removed after the execution of subsequent code cells in the notebook. If you need to re-enter the db password, re-run the `Cmd 2` again to recreate `dbpwd` notebook widget.
-  * You can either run rest of the code cells in the Notebook individually or run the entire notebook by selecting the "Run All" option from Notebook Menu.
+  * You can either run rest of the code cells in the Notebook individually or run the entire notebook by selecting the "Run All" option from the Notebook Menu.
   * Execution time of this Notebook depends on the volume of your usage data.
   * It is also recommended to run the profiler notebooks during off-peek hours.
 <br>
