@@ -52,7 +52,8 @@
 * You will get the following notebooks in **td-profiler** workspace folder after import.
 ![td-profiler folder](documentation/assets/td-profiler-nootebook-folder.png)
 <br>
-* Use the Notebooks in the following sequence.
+
+Use the Notebooks in the following sequence.
 <br>
 
   **1 td_profiler_usage_data_extract_queries** :
