@@ -30,7 +30,7 @@
 
 **TD Profiler Notebooks :**
 
-* Notebooks are packaged as zip files and available under [td-profiler-repo Releases](https://github.com/databricks-migrations/td-profiler-distro/releases) for users to import them directly into their Databricks workspace.
+* Notebooks are packaged as zip files and available under [Releases](https://github.com/databricks-migrations/td-profiler-distro/releases) for users to import them directly into their Databricks workspace.
 <img src="documentation/assets/td-profiler-distro-page-sample.png" alt="TD Profiler Notebooks Distribution" width="600"/>
 * Always import from latest release tag. 
 
