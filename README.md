@@ -56,7 +56,7 @@
 Use the Notebooks in the following sequence.
 <br>
 
-  **1 td_profiler_usage_data_extract_queries** :
+  **1) td_profiler_usage_data_extract_queries** :
   * No need to run this notebook. 
   * This notebook includes the SQL queries to extract Teradata usage data and these queries are used by `td_profiler_usage_data_extract` notebook.
   * You can review these queries.
