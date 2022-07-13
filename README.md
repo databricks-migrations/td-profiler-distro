@@ -83,7 +83,13 @@ Use the Notebooks in the following sequence.
 <br>
 
   **3) td_profiler_usage_data_analysis.sql** :
-  * Run this Notebook after the successful execution of `td_profiler_usage_data_extract`.
-  * Export this notebook with execution results as `DBC Archive` format to share with Databricks team.
+  * Run this Notebook after the successful execution of `td_profiler_usage_data_extract` to get preview of TD workload insights.
+  
+
+>### Next Steps:
+* Share the profiler execution results (data from tables created by td_profiler_usage_data_extract run) with Databricks EDW SWAT team to create a Dashboard with fullset of workload insights.
+* Databricks EDW SWAT team to create Workload Insights and DBU projections.
+* Sample Workload Insights dashboard :
+<img src="documentation/assets/td-profiler-workload-insights.png" alt="Sample Workload Insights Dashboard" width="800"/>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
